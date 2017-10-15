@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent} from './home/home.component';
+import { AdminLayoutComponent} from './shared/layouts/admin/admin-layout.component';
 
 const routes: Routes = [
-    { path: '',component:HomeComponent, pathMatch: 'full' },
-    { path: 'home',component:HomeComponent, pathMatch: 'full' },
+    { path: '',component:AdminLayoutComponent, pathMatch: 'full' },
+    { path: 'home',component:AdminLayoutComponent, pathMatch: 'full' },
     { path: '**', redirectTo: 'home' }
 ];
 
