@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminLayoutComponent implements OnInit {
 
+  private isMiniSideBar:Boolean=false;
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  private  sideBarChange ()
+  {
+    this.isMiniSideBar=!this.isMiniSideBar;
   }
 
 }
