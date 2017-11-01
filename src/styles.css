@@ -15,3 +15,7 @@ border: 0;
 {
     padding: 0px;
 }
+.main-sidebar section
+{
+padding: 0px !important;
+}
