@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './admin/home/home.component';
 import { DefaultLayoutComponent } from './shared/layouts/default/default-layout.component';
 import { AdminLayoutComponent } from './shared/layouts/admin/admin-layout.component';
+import { TreeComponent } from './shared/components/tree/tree.component';
+import { MasterComponent} from './admin/master/master.component';
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { AdminLayoutComponent } from './shared/layouts/admin/admin-layout.compon
     AppComponent,
     HomeComponent,
     DefaultLayoutComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    TreeComponent,
+    MasterComponent
   ],
   imports: [
     BrowserModule,AppRoutingModule

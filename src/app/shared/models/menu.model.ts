@@ -1,17 +1,17 @@
 export class Menu
 {
- id:number;
- name:string;
- order:number;
- routePath:string;
- menuItems:MenuItem[];
+ Id:number;
+ Name:string;
+ Order:number;
+ RoutePath:string;
+ MenuItems:MenuItem[];
 }
 
 export class MenuItem
 {
-    id:number;
-    name:string;
-    order:number;
-    routePath:string;
-    menuid:number;
+    Id:number;
+    Name:string;
+    Order:number;
+    RoutePath:string;
+    MenuId:number;
 }

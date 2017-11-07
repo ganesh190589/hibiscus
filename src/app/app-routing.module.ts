@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminLayoutComponent} from './shared/layouts/admin/admin-layout.component';
 import { DefaultLayoutComponent} from './shared/layouts/default/default-layout.component';
+import {adminChildroutes} from './shared/layouts/admin/admin-layout-routing.module';
+
 
 const routes: Routes = [
         { path: 'home',component:DefaultLayoutComponent, pathMatch: 'full' },
-        { path: 'admin',component:AdminLayoutComponent ,pathMatch:'full',},
+        { path: 'admin',component:AdminLayoutComponent ,pathMatch:'full',  children:adminChildroutes},
         { path: '',component:DefaultLayoutComponent},
         { path: '**', redirectTo: 'home' }
 ];
