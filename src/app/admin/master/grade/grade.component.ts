@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-grade',
   templateUrl: './grade.component.html',
-  styleUrls: ['./grade.component.']
+  styles:['' ]
 })
 export class GradeComponent implements OnInit {
 

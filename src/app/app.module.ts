@@ -10,7 +10,7 @@ import { TreeComponent } from './shared/components/tree/tree.component';
 import { MasterComponent} from './admin/master/master.component';
 import {MenuService} from './shared/services/menu.service';
 import {AppSettings} from '../app/app-settings';
-
+import {MasterModule} from '../app/admin/master/master.module';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import {AppSettings} from '../app/app-settings';
     MasterComponent
   ],
   imports: [
-    BrowserModule,AppRoutingModule,HttpModule
+    BrowserModule,AppRoutingModule,HttpModule,MasterModule
   ],
   providers: [MenuService,AppSettings],
   bootstrap: [AppComponent]

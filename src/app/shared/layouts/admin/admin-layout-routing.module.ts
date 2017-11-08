@@ -7,5 +7,6 @@ import {master_routes} from '../../../admin/master/master-routing.module';
 
 export const admin_routes: Routes = [  
                 {path:'admin/master',component:MasterComponent},
-                {path:'',component:MasterComponent,children:master_routes}];
+                {path:'',component:MasterComponent,children:master_routes}
+            ];
 

@@ -16,9 +16,84 @@ export class AdminLayoutComponent implements OnInit {
   @ViewChild("chessCanvas") chessCanvas: ElementRef; 
 
   constructor(private _menuService:MenuService) { 
-        _menuService.getAllMenusWithMenuItems().subscribe(result=>{this.menuList=result},error=>{
-          
-        });
+        // _menuService.getAllMenusWithMenuItems().subscribe(result=>{
+        //   debugger;
+        //   this.menuList=result},error=>{
+        //   debugger;
+        // });
+        this.menuList=[
+          {
+              "MenuId": 1,
+              "Name": "Master",
+              "Order": 0,
+              "RoutePath": "/admin/master",
+              "MenuItems": [
+                  {
+                      "MenuItemId": 1,
+                      "Name": "Job Title",
+                      "Order": 0,
+                      "RoutePath": "/master/jobtitle",
+                      "MenuId": 1,
+                      "Position":2
+                  },
+                  {
+                      "MenuItemId": 1,
+                      "Name": "Grade",
+                      "Order": 0,
+                      "RoutePath": "/master/grade",
+                      "MenuId": 2,
+                      "Position":2
+                  },
+                  {
+                      "MenuItemId": 1,
+                      "Name": "Grade",
+                      "Order": 0,
+                      "RoutePath": "/master/department",
+                      "MenuId": 2,
+                      "Position":2
+                  },
+                  {
+                      "MenuItemId": 1,
+                      "Name": "Grade",
+                      "Order": 0,
+                      "RoutePath": "/master/group",
+                      "MenuId": 2,
+                      "Position":2
+                  }
+              ]
+          },
+          {
+              "MenuId": 2,
+              "Name": "Settings",
+              "Order": 1,
+              "RoutePath": "admin/master",
+              "MenuItems": [
+                  {
+                      "MenuItemId": 1,
+                      "Name": "Master",
+                      "Order": 0,
+                      "RoutePath": "master",
+                      "MenuId": 2,
+                      "Position":2
+                  },
+                  {
+                      "MenuItemId": 1,
+                      "Name": "Master",
+                      "Order": 0,
+                      "RoutePath": "admin/master",
+                      "MenuId": 2,
+                      "Position":2
+                  }
+              ]
+          },
+          {
+              "MenuId": 3,
+              "Name": "Dashboard",
+              "Order": 1,
+              "RoutePath": "admin/master",
+              "MenuItems": []
+          }
+      ]
     }
 
   ngOnInit() {
