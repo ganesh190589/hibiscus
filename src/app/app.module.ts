@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpModule} from '@angular/http';
 import {AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './admin/home/home.component';
@@ -7,11 +8,14 @@ import { DefaultLayoutComponent } from './shared/layouts/default/default-layout.
 import { AdminLayoutComponent } from './shared/layouts/admin/admin-layout.component';
 import { TreeComponent } from './shared/components/tree/tree.component';
 import { MasterComponent} from './admin/master/master.component';
+import {MenuService} from './shared/services/menu.service';
+import {AppSettings} from '../app/app-settings';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+        AppComponent,
     HomeComponent,
     DefaultLayoutComponent,
     AdminLayoutComponent,
@@ -19,9 +23,9 @@ import { MasterComponent} from './admin/master/master.component';
     MasterComponent
   ],
   imports: [
-    BrowserModule,AppRoutingModule
+    BrowserModule,AppRoutingModule,HttpModule
   ],
-  providers: [],
+  providers: [MenuService,AppSettings],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 export class Menu
 {
- Id:number;
+ MenuId:number;
  Name:string;
  Order:number;
  RoutePath:string;
@@ -9,9 +9,10 @@ export class Menu
 
 export class MenuItem
 {
-    Id:number;
+    MenuItemId:number;
     Name:string;
     Order:number;
     RoutePath:string;
     MenuId:number;
+    Position:number;
 }
