@@ -1,4 +1,7 @@
-<p>
-  master works!
-</p>
-<router-outlet></router-outlet>
+
+  <div class="row">
+    <div class="col" *ngFor="let category of masterCategories">
+      <a [routerLink]="[category.RoutePath]">{{category.Name}}</a>
+
+    </div>
+  </div>

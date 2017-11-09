@@ -15,7 +15,7 @@ export class MasterComponent implements OnInit {
           MenuItemId: 1,
           Name: "Job Title",
           Order: 0,
-          RoutePath: "/master/jobtitle",
+          RoutePath: "/jobtitle",
           "MenuId": 1,
           "Position":2
       },
@@ -23,7 +23,7 @@ export class MasterComponent implements OnInit {
           "MenuItemId": 1,
           "Name": "Grade",
           "Order": 0,
-          RoutePath: "/master/grade",
+          RoutePath: "/admin/master/grade",
           "MenuId": 2,
           "Position":2
       },
@@ -31,7 +31,7 @@ export class MasterComponent implements OnInit {
           "MenuItemId": 1,
           "Name": "Grade",
           "Order": 0,
-          RoutePath: "/master/department",
+          RoutePath: "/admin/master/department",
           "MenuId": 2,
           "Position":2
       },
@@ -39,7 +39,7 @@ export class MasterComponent implements OnInit {
           "MenuItemId": 1,
           "Name": "Grade",
           "Order": 0,
-          RoutePath: "/master/group",
+          RoutePath: "/admin/master/group",
           "MenuId": 2,
           "Position":2
       }
