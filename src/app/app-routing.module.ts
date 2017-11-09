@@ -10,7 +10,7 @@ const routes: Routes = [
         { path: 'admin',component:AdminLayoutComponent},
         { path: '',component:AdminLayoutComponent,  children:admin_routes},
         { path: '',component:DefaultLayoutComponent},
-        { path: '**', redirectTo: 'home' }
+        // { path: '**', redirectTo: 'home' }
 ];
 
 /**

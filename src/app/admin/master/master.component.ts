@@ -15,7 +15,7 @@ export class MasterComponent implements OnInit {
           MenuItemId: 1,
           Name: "Job Title",
           Order: 0,
-          RoutePath: "/jobtitle",
+          RoutePath: "/admin/master/jobtitle",
           "MenuId": 1,
           "Position":2
       },

@@ -8,9 +8,9 @@ import { GroupComponent } from './group/group.component';
 
 
 export const master_routes: Routes = [
-  { path: 'jobtitle',component:JobtitleComponent, pathMatch: 'full' },
-  { path: 'grade',component:GradeComponent ,pathMatch:'full',},
-  { path:'department',component:DepartmentComponent,pathMatch:'full'},
-  { path: 'group',component:GroupComponent}
+  // { path: 'admin/master/jobtitle',component:JobtitleComponent, pathMatch: 'full' },
+  { path: 'admin/master/grade',component:GradeComponent ,pathMatch:'full',},
+  { path:'admin/master/department',component:DepartmentComponent,pathMatch:'full'},
+  { path: 'admin/master/group',component:GroupComponent}
 ];
 
