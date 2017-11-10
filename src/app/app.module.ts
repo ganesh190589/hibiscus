@@ -11,6 +11,7 @@ import { MasterComponent} from './admin/master/master.component';
 import {MenuService} from './shared/services/menu.service';
 import {AppSettings} from '../app/app-settings';
 import {MasterModule} from '../app/admin/master/master.module';
+import {AdminLayoutModule} from './shared/layouts/admin/admin-layout.module';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import {MasterModule} from '../app/admin/master/master.module';
     MasterComponent
   ],
   imports: [
-    BrowserModule,AppRoutingModule,HttpModule,MasterModule
+    BrowserModule,AppRoutingModule,HttpModule,MasterModule,AdminLayoutModule
   ],
   providers: [MenuService,AppSettings],
   bootstrap: [AppComponent]
