@@ -11,7 +11,9 @@ import { MasterComponent} from './admin/master/master.component';
 import {MenuService} from './shared/services/menu.service';
 import {AppSettings} from '../app/app-settings';
 import {MasterModule} from '../app/admin/master/master.module';
-import {AdminLayoutModule} from './shared/layouts/admin/admin-layout.module';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import {SharedModule} from './shared/shared.module';
+import {AdminModule} from './admin/admin.module';
 
 
 @NgModule({
@@ -24,7 +26,7 @@ import {AdminLayoutModule} from './shared/layouts/admin/admin-layout.module';
     MasterComponent
   ],
   imports: [
-    BrowserModule,AppRoutingModule,HttpModule,MasterModule,AdminLayoutModule
+    BrowserModule,SharedModule,AdminModule,AppRoutingModule,HttpModule,MasterModule,BsDropdownModule
   ],
   providers: [MenuService,AppSettings],
   bootstrap: [AppComponent]
