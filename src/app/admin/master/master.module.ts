@@ -1,19 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { JobtitleComponent } from './jobtitle/jobtitle.component';
 import { GradeComponent } from './grade/grade.component';
 import { GroupComponent } from './group/group.component';
 import { DepartmentComponent } from './department/department.component';
+import {JobtitleModule} from './jobtitle/jobtitle.module';
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    JobtitleModule
   ],
   declarations: [
-    
-    JobtitleComponent,
     GradeComponent,
     GroupComponent, 
     DepartmentComponent]

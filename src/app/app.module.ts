@@ -1,7 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpModule} from '@angular/http';
-import {AppRoutingModule} from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { PluginImportsModule} from './shared/module/plugin-imports.module';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './admin/home/home.component';
 import { DefaultLayoutComponent } from './shared/layouts/default/default-layout.component';
@@ -11,14 +13,13 @@ import { MasterComponent} from './admin/master/master.component';
 import {MenuService} from './shared/services/menu.service';
 import {AppSettings} from '../app/app-settings';
 import {MasterModule} from '../app/admin/master/master.module';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import {SharedModule} from './shared/shared.module';
 import {AdminModule} from './admin/admin.module';
 
 
 @NgModule({
   declarations: [
-        AppComponent,
+    AppComponent,
     HomeComponent,
     DefaultLayoutComponent,
     AdminLayoutComponent,
@@ -26,7 +27,7 @@ import {AdminModule} from './admin/admin.module';
     MasterComponent
   ],
   imports: [
-    BrowserModule,SharedModule,AdminModule,AppRoutingModule,HttpModule,MasterModule,BsDropdownModule
+    PluginImportsModule,BrowserModule,CommonModule,Ng2SmartTableModule, SharedModule,AdminModule,MasterModule,AppRoutingModule
   ],
   providers: [MenuService,AppSettings],
   bootstrap: [AppComponent]

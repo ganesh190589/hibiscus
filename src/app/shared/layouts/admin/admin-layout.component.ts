@@ -6,8 +6,9 @@ import { MenuService } from '../../services/menu.service';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin-layout..component.html',
-  styleUrls: ['./admin-layout.component.css', "../../../../../node_modules/admin-lte/dist/css/AdminLTE.min.css",
-    "../../../../../node_modules/admin-lte/dist/css/skins/_all-skins.min.css"]
+  styleUrls: ['./admin-layout.component.css'
+
+  ]
 })
 export class AdminLayoutComponent implements OnInit {
 
@@ -23,6 +24,13 @@ export class AdminLayoutComponent implements OnInit {
     //   debugger;
     // });
     this.menuList = [
+      {
+        "MenuId": 3,
+        "Name": "Home",
+        "Order": 1,
+        "RoutePath": "/home",
+        "MenuItems": []
+      },
       {
         "MenuId": 1,
         "Name": "Master",
