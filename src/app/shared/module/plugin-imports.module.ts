@@ -5,12 +5,13 @@ import {HttpModule} from '@angular/http';
 import { BsDropdownModule,ModalModule  } from 'ngx-bootstrap';
 
 
+
 @NgModule({
   declarations: [
       
   ],
   imports: [
-    HttpModule,BsDropdownModule,ModalModule
+    HttpModule,BsDropdownModule,ModalModule.forRoot()
   ],
   providers: [],
   

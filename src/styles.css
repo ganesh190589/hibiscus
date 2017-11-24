@@ -108,3 +108,7 @@ padding: 0px !important;
     min-height: 15em;
   }
   
+  .main-header .sidebar-toggle
+  {
+  padding:10px 15px !important;
+  }
